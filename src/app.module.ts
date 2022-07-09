@@ -5,6 +5,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { ConfigModule } from '@nestjs/config';
 import { StudentsModule } from './modules/students/students.module';
+import { DisciplinesModule } from './modules/disciplines/disciplines.module';
 @Module({
   imports: [ 
     GraphQLModule.forRoot<ApolloDriverConfig>({
@@ -25,6 +26,7 @@ import { StudentsModule } from './modules/students/students.module';
     logging: process.env.TYPEORM_LOGGING === 'true',
   }),
   StudentsModule,
+  DisciplinesModule,
 ],
 })
 export class AppModule {}
