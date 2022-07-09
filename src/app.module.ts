@@ -22,6 +22,7 @@ import { join } from 'path';
     synchronize: process.env.TYPEORM_SYNCHRONIZE === 'true',
     logging: process.env.TYPEORM_LOGGING === 'true',
   }),
+  StudentsModule,
 ],
 })
 export class AppModule {}
