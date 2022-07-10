@@ -1,4 +1,4 @@
-import { NestjsQueryGraphQLModule } from '@nestjs-query/query-graphql';
+import { NestjsQueryGraphQLModule, PagingStrategies } from '@nestjs-query/query-graphql';
 import { NestjsQueryTypeOrmModule } from '@nestjs-query/query-typeorm';
 import { Module } from '@nestjs/common';
 import { CreateLessonInput } from './dto/create-lesson.input';
@@ -17,6 +17,7 @@ import { Lesson } from './entities/lesson.entity';
           CreateDTOClass: CreateLessonInput,
           UpdateDTOClass: UpdateLessonInput,
           enableTotalCount: true,
+          pagingStrategy: PagingStrategies.OFFSET,
         }],
     }),
   ],

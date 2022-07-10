@@ -1,4 +1,4 @@
-import { NestjsQueryGraphQLModule } from '@nestjs-query/query-graphql';
+import { NestjsQueryGraphQLModule, PagingStrategies } from '@nestjs-query/query-graphql';
 import { NestjsQueryTypeOrmModule } from '@nestjs-query/query-typeorm';
 import { Module } from '@nestjs/common';
 import { ContentDTO } from './dto/content.dto';
@@ -17,6 +17,7 @@ import { Content } from './entities/content.entity';
           CreateDTOClass: CreateContentInput,
           UpdateDTOClass: UpdateContentInput,
           enableTotalCount: true,
+          pagingStrategy: PagingStrategies.OFFSET,
         }],
     }),
   ],
