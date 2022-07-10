@@ -127,7 +127,7 @@ input ContentUpdateFilter {
 }
 
 input CreateContentInput {
-  description: String
+  description: String!
   linkContent: String
 }
 
