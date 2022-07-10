@@ -1,12 +1,11 @@
 import { BaseEntity } from 'src/modules/bases/entities/base.entity';
 import { Column, Entity } from 'typeorm';
 
-
 @Entity()
-export class Student extends BaseEntity {
+export class Content extends BaseEntity {
   @Column()
-  name: string;
+  description: string;
 
   @Column()
-  key: string;
+  linkContent: string;
 }
