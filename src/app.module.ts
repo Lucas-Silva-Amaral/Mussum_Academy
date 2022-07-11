@@ -26,7 +26,7 @@ import { join } from 'path';
     username: process.env.TYPEORM_USERNAME,
     password: process.env.TYPEORM_PASSWORD,
     database: process.env.TYPEORM_DATABASE,
-    entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    entities: [process.env.TYPEORM_ENTITIES],
     synchronize: process.env.TYPEORM_SYNCHRONIZE === 'true',
     logging: process.env.TYPEORM_LOGGING === 'true',
   }),
