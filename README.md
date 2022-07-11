@@ -1,11 +1,11 @@
 
 # Technologies used
 
-[NestJS](https://docs.nestjs.com/)
-[Nestjs-query](https://doug-martin.github.io/nestjs-query)
-[Typescript](https://www.typescriptlang.org/)
-[TypeORM](https://typeorm.io/)
-[Docker](https://www.docker.com/)
+### [NestJS](https://docs.nestjs.com/)
+### [Nestjs-query](https://doug-martin.github.io/nestjs-query)
+### [Typescript](https://www.typescriptlang.org/)
+### [TypeORM](https://typeorm.io/)
+### [Docker](https://www.docker.com/)
 
 
 
